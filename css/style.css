@@ -1,4 +1,28 @@
 /* Base */
+
+header {
+  text-align: center;
+}
+
+.spacer {
+  display: none
+}
+
+@media screen and (min-width: 100px) {
+  header {
+    display: flex;
+  }
+  .logo,
+  .spacer {
+    display: block;
+    width: 50px;
+    flex: 0 0 auto;
+  }
+  .heading {
+    flex: 1 1 auto;
+  }
+}
+
 body {
   line-height: 1.7;
   color: #4d4d4d;
